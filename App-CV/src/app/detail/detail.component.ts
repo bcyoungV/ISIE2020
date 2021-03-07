@@ -8,7 +8,8 @@ import { Personne } from '../model/personne';
   styleUrls: ['./detail.component.css']
 })
 export class DetailComponent implements OnInit {
-@Input() personne!: Personne;
+  @Input()
+  personne!: Personne;
   constructor(private recrueService: LsRecruesService) { }
 
   ngOnInit(): void {

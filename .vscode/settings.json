@@ -1,0 +1,7 @@
+{
+ "editor.defaultFormatter": "VisualStudioExptTeam.vscodeintellicode",
+ "editor.definitionLinkOpensInPeek": true,
+ "editor.linkedEditing": true,
+ "editor.stablePeek": true,
+ "editor.fontSize": 15
+}

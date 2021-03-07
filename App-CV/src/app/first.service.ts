@@ -1,3 +1,4 @@
+import { SecondService } from './second.service';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,12 @@ import { Injectable } from '@angular/core';
 })
 export class FirstService {
 
-  constructor() { }
+  constructor(private secondservice: SecondService) { }
+
+  logger(msg: string){
+    console.log('Bonjour !');
+    console.log(msg);
+
+    this.secondservice.showMsg();
+  }
 }
