@@ -1,1 +1,56 @@
-<p>detail works!</p>
+<div *ngIf="personne" class="card-container">
+  <div class="front">
+    <div class="cover">
+      <img src="../../assets/rotating_card_thumb2.png">
+    </div>
+    <div class="user">
+      <img class="img-circle" src="../../assets/{{personne.avatar | noImage}}">
+    </div>
+    <div class="content">
+      <div class="main">
+        <h3 class="name">{{personne.prenom}} {{personne.nom}}</h3>
+        <p class="profession">
+          {{personne.profession}}
+        </p>
+      </div>
+      <div class="footer">
+        <i class="fa fa-mail-forward"> Auto Rotation</i>
+      </div>
+    </div>
+  </div>
+  <div class="back">
+    <div class="header">
+      <h5 class="motto">"Entre être et n'est pas être, ça c'est bien moi"</h5>
+    </div>
+    <div class="content">
+      <div class="main">
+        <h4 class="text-center">
+          Job Description
+        </h4><p class="mce-text-center">Develeppeur Web, Infographiste, Designer Web, HTML5, CSS3, Corerl and many others...</p>
+        <div class="stats-container">
+          <div class="stats">
+            <h4>235</h4>
+            <p>Abonnés</p>
+          </div>
+          <div class="stats">
+            <h4>1330</h4>
+            <p>Abonnements</p>
+          </div>
+          <div class="stats">
+            <h4>30</h4>
+            <p>Projects</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="social-links text-center">
+
+        <button (click)="addRecrue()" class="btn btn-success">Recruter</button>
+      </div>
+    </div> <!--end back painnel-->
+
+
+
+  </div><!--end card-->
+</div>

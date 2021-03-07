@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Personne} from '../model/personne';
+import { LsPersonnesService } from '../ls-personnes.service';
 
 @Component({
   selector: 'app-cv',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CvComponent implements OnInit {
 
-  constructor() { }
+  lsPersonnes: Personne[] = [];
+  personneSelected!: Personne;
+
+  constructor(private personneService: LsPersonnesService) { }
 
   ngOnInit(): void {
+    this.lsPersonnes = this.personneService.getLsPersonnes();
   }
+
+
+  RecebePersonne(p: Personne){
+    this.personneSelected = p;
+  }
+
+  addNewPersonne(){
+    this.personneService.addPersonne();
+  }
+
+
 
 }
