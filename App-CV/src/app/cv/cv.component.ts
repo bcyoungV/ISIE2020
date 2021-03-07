@@ -18,8 +18,8 @@ export class CvComponent implements OnInit {
     this.lsPersonnes = this.personneService.getLsPersonnes();
   }
 
-
-  RecebePersonne(p: Personne){
+// podemos  declar  o p como string tmabém
+  RecebePersonne(p: any){
     this.personneSelected = p;
   }
 

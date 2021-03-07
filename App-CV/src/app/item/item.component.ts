@@ -7,8 +7,7 @@ import { Personne } from '../model/personne';
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent implements OnInit {
-  @Input()
-  onePersonne!: Personne;
+  @Input() onePersonne!: Personne;
   @Output() personneToLs = new EventEmitter<Personne>();
 
   constructor() { }
@@ -16,15 +15,8 @@ export class ItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
 sendPersonne(){
   this.personneToLs.emit(this.onePersonne);
 }
-
-
-
-
-
-
 
 }

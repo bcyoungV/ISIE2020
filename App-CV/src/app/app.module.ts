@@ -1,3 +1,4 @@
+import { FirstService } from './first.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
@@ -10,6 +11,8 @@ import { NoImagePipe } from './no-image.pipe';
 import { ShortPipe } from './short.pipe';
 import { FilterPipe } from './filter.pipe';
 import { RecrueComponent } from './recrue/recrue.component';
+import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,12 +25,14 @@ import { RecrueComponent } from './recrue/recrue.component';
     NoImagePipe,
     ShortPipe,
     FilterPipe,
-    RecrueComponent
+    RecrueComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [FirstService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

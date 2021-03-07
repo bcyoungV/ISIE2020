@@ -24,4 +24,7 @@ export class LsComponent implements OnInit {
       this.personneToCV.emit(p);
     }
 
+    showLs(){
+      console.log(this.PersonnesLs);
+    }
 }

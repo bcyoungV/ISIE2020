@@ -8,7 +8,7 @@ import { Personne } from '../model/personne';
   styleUrls: ['./detail.component.css']
 })
 export class DetailComponent implements OnInit {
-@Input() personne!: Personne;
+  @Input() personne!: Personne;
   constructor(private recrueService: LsRecruesService) { }
 
   ngOnInit(): void {
@@ -22,6 +22,7 @@ export class DetailComponent implements OnInit {
     else {
     this.recrueService.addRecrue(this.personne);
     }
+    console.log(this.recrueService.getLsRecrues());
   }
 
 }

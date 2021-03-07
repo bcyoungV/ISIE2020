@@ -6,6 +6,7 @@ import { Personne } from './model/personne';
 })
 export class LsRecruesService {
 private LsRecrues: Personne[] = [];
+  get: any;
 
 
   constructor() { }
@@ -18,9 +19,10 @@ getLsRecrues(){
 addRecrue(p: Personne){
   this.LsRecrues.push(p);
 }
-// tslint:disable-next-line:typedef
+
 verifyRecrue(personne: Personne){
-  return this.LsRecrues.find(p => p.id === personne.id);
+  // tslint:disable-next-line:triple-equals
+  return this.LsRecrues.find(p => p.id == personne.id);
 }
 
 

@@ -3,8 +3,10 @@
     <app-ls (personneToCV)="RecebePersonne($event)" [PersonnesLs] = "lsPersonnes">
     </app-ls>
   </div>
-<div class="col-md-7">
-  <app-detail [personne]= "personneSelected" ></app-detail>
+  <div class="col-md-7">
+    <app-detail [personne]= "personneSelected" ></app-detail>
+  </div>
+</div>
+<button (click)="addNewPersonne()"class="btn btn-danger">Add Personne</button>
 
-</div>
-</div>
+
