@@ -8,12 +8,7 @@ import { Personne } from '../model/personne';
   styleUrls: ['./detail.component.css']
 })
 export class DetailComponent implements OnInit {
-<<<<<<< HEAD
   @Input() personne!: Personne;
-=======
-  @Input()
-  personne!: Personne;
->>>>>>> f48bd1f24bc3b7cd872bf8b257987f5a14601705
   constructor(private recrueService: LsRecruesService) { }
 
   ngOnInit(): void {

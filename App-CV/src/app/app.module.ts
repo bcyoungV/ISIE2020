@@ -9,10 +9,12 @@ import { ItemComponent } from './item/item.component';
 import { CustomDirDirective } from './custom-dir.directive';
 import { NoImagePipe } from './no-image.pipe';
 import { ShortPipe } from './short.pipe';
-import { FilterPipe } from './filter.pipe';
 import { RecrueComponent } from './recrue/recrue.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
+import { ISIE_ROUTING } from './app.routing';
+import { LsServeursComponent } from './ls-serveurs/ls-serveurs.component';
+import { FiltrePipe } from './filtre.pipe';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,15 @@ import { FormsModule } from '@angular/forms';
     CustomDirDirective,
     NoImagePipe,
     ShortPipe,
-    FilterPipe,
+    FiltrePipe,
     RecrueComponent,
-    HomeComponent
+    HomeComponent,
+    LsServeursComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ISIE_ROUTING
   ],
   providers: [FirstService],
   bootstrap: [AppComponent]

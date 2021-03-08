@@ -1,0 +1,15 @@
+Name:
+<hr>
+<input [(ngModel)] = "name" type = "text" class = "form-control">
+<br>
+
+<h2>Cours d'Angular par {{name}}</h2>
+
+<div [hidden] = "hd" [style.backgroundColor] = "color">
+  Master ISIE
+</div>
+
+<button (click)= "showalert()" class = "btn btn-primary">Valider</button>
+<br>
+<br>
+<button (click) = "hide()"class = "btn btn-danger">Hide</button>

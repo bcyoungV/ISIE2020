@@ -1,0 +1,20 @@
+<div class = "brunocasaca" [ngStyle]="{
+  'backgroundColor': bgColor,
+  'color': color,
+  'fontSize': size,
+  'fontFamily': font
+}">Cours de MEAN Stack á la FSEGT</div>
+<br>
+BackgroundColor: <br>
+<input [(ngModel)] = "bgColor" type = "text" class = "form-control">
+<br>
+Color: <br>
+<input [(ngModel)] = "color" type = "text" class = "form-control">
+<br>
+Size: <br>
+<input #in (change) = "changeSize(in)" type = "number" class = "form-control">
+<br>
+Police: <br>
+<select [(ngModel)] = "font">
+  <option *ngFor = "let font of listFonts" [value] = "font">{{font}}</option>
+</select>
