@@ -12,7 +12,7 @@ export class FiltrePipe implements PipeTransform {
       return value;
     }
     else {
-      let newlistserveur: Serveur[] = [];
+      const newlistserveur: Serveur[] = [];
       for (let serv of value)
       {
         if (serv['status'] == filtredStatus)

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LsServeursComponent } from './ls-serveurs.component';
+import { NavbarComponent } from './navbar.component';
 
-describe('LsServeursComponent', () => {
-  let component: LsServeursComponent;
-  let fixture: ComponentFixture<LsServeursComponent>;
+describe('NavbarComponent', () => {
+  let component: NavbarComponent;
+  let fixture: ComponentFixture<NavbarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LsServeursComponent ]
+      declarations: [ NavbarComponent ]
     })
     .compileComponents();
   });
-  
+
   beforeEach(() => {
-    fixture = TestBed.createComponent(LsServeursComponent);
+    fixture = TestBed.createComponent(NavbarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

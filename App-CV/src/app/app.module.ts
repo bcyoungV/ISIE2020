@@ -1,3 +1,4 @@
+import { MsWordComponent } from './ms-word/ms-word.component';
 import { FirstService } from './first.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,9 +16,12 @@ import { FormsModule } from '@angular/forms';
 import { ISIE_ROUTING } from './app.routing';
 import { LsServeursComponent } from './ls-serveurs/ls-serveurs.component';
 import { FiltrePipe } from './filtre.pipe';
+import { InfoComponent } from './info/info.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
+    MsWordComponent,
     AppComponent,
     CvComponent,
     DetailComponent,
@@ -29,7 +33,9 @@ import { FiltrePipe } from './filtre.pipe';
     FiltrePipe,
     RecrueComponent,
     HomeComponent,
-    LsServeursComponent
+    LsServeursComponent,
+    InfoComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

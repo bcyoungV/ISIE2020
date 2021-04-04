@@ -26,4 +26,7 @@ export class LsPersonnesService {
 
   }
 
+  getPersonneById(id){
+    return this.lsPersonnes.find(p => p.id === id);
+  }
 }

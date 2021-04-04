@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LsServeursComponent } from './ls-serveurs.component';
+import { InfoComponent } from './info.component';
 
-describe('LsServeursComponent', () => {
-  let component: LsServeursComponent;
-  let fixture: ComponentFixture<LsServeursComponent>;
+describe('InfoComponent', () => {
+  let component: InfoComponent;
+  let fixture: ComponentFixture<InfoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LsServeursComponent ]
+      declarations: [ InfoComponent ]
     })
     .compileComponents();
   });
-  
+
   beforeEach(() => {
-    fixture = TestBed.createComponent(LsServeursComponent);
+    fixture = TestBed.createComponent(InfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

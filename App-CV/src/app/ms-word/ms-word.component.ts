@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 
 @Component({
   selector: 'app-ms-word',
@@ -19,7 +22,7 @@ export class MsWordComponent implements OnInit {
   }
 
   // tslint:disable-next-line:typedef
-  changeSize(newSize){
+  changeSize(newSize: { value: string; }){
     console.log(newSize.value);
 
     this.size = newSize.value + 'px';

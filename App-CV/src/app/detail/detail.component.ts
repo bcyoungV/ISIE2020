@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, Input, OnInit } from '@angular/core';
 import { LsRecruesService } from '../ls-recrues.service';
 import { Personne } from '../model/personne';
@@ -9,7 +10,7 @@ import { Personne } from '../model/personne';
 })
 export class DetailComponent implements OnInit {
   @Input() personne!: Personne;
-  constructor(private recrueService: LsRecruesService) { }
+  constructor(private recrueService: LsRecruesService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -23,6 +24,13 @@ export class DetailComponent implements OnInit {
     this.recrueService.addRecrue(this.personne);
     }
     console.log(this.recrueService.getLsRecrues());
+  }
+  goToInfos(){
+
+    this.router.navigate(['cv', this.personne.id]);
+
+
+
   }
 
 }
